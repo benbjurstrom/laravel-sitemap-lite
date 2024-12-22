@@ -29,6 +29,7 @@ Sitemap::create()
 ```
 
 You may need to set the file visibility on your sitemap. For example, if you are writing a sitemap to S3 that you want to be publicly available. You can set the third parameter to `true` to make it public:
+
 ```php
 Sitemap::create()
     ->add(Url::create('/home'))
