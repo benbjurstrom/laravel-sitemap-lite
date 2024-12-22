@@ -18,7 +18,8 @@ test('XML has image', function () {
                         </urlset>';
 
     $sitemap = Sitemap::create();
-    $url = Url::create('https://localhost')->addImage('https://localhost/favicon.ico', 'Favicon');
+    $url = Url::create('https://localhost')->addImage('https://localhost/favicon.ico', 'Favicon')
+        ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY);
     $sitemap->add($url);
 
     $render_output = $sitemap->render();
