@@ -2,6 +2,16 @@
 
 All notable changes to `laravel-sitemap` will be documented in this file
 
+## 8.1.0-lite - 2026-04-26
+
+### What's Changed
+
+- Merged upstream manual sitemap improvements through Spatie `8.1.0`.
+- Added `sort()` support for deterministic URL ordering.
+- Added XSL stylesheet support for `Sitemap` and `SitemapIndex`.
+- Added sitemap splitting support via `maxTagsPerSitemap()`.
+- Kept crawler, generator, auto-discovery dependencies, config, tests, and documentation removed.
+
 ## 7.3.2 - 2026-04-26
 
 ### What's Changed
